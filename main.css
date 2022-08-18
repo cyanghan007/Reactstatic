@@ -1,49 +1,65 @@
+
 body {
-    background-color: #5203fc;
+    margin: 0;
+    background-color: #766b8a;
+    font-family: 'Monserrat', sans-serif;
+    color: rgb(67, 63, 63);
 }
 
-section {
-    background-color: 	#505050;
-    width: 20%;
-    height: 200px;
-}
-
-#app {
+.main > div {
     display: flex;
+    background-color: rgb(55, 59, 59);
     flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 60vh;
+    align-items: flex-start;
+}
+
+.app {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+    flex-basis: 60%;
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw;
+    grid-template-rows: 15vw 15vw;
+    color: white;
+    justify-items: stretch;
     justify-content: center;
 }
-#container {
+
+.stats {
+    display: inline-flex;
+}
+
+.content {
     display: flex;
     flex-direction: column;
-}
-
-#top {
-    display: flex;
-}
-
-#large {
-    display: flex;
     width: 900px;
     height: 60vh;
     justify-content: center;
     align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(39, 39, 39);
 }
 
-#large div {
-    background-color: #5203fc;
-    width: 88%;
-    height: 40vh;
+.reviews {
+    columns: 15vw;
+    grid-row: 15vw 15vw;
 }
 
-aside {
+.Sidebar {
     width: 300px;
-    height: 900px;
-    background-color: #505050;
+    height: 800px;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-nav {
+.sidebarcontent {
     display: flex;
-    flex-direction: column;
-
+    justify-content: space-between;
 }
